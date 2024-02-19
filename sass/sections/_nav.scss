@@ -1,2 +1,30 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+
+
+.nav__content{
+    @include flex(space-between,center);
+    gap:2em;
+}
+.nav__right ul li a{
+
+    text-decoration: none;
+    color:black;
+    padding: 1em;
+  display: block;
+}
+.nav__right ul{
+    list-style-type:none;
+    @include flex(space-between,center);
+    gap:2em;
+}
+.nav__right ul li{
+    cursor:pointer;
+
+}
+.nav__right ul li a:hover{
+    color:$Pink;
+    background-color: $dark-cyan;
+    
+}

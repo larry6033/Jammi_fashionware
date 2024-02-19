@@ -8,3 +8,36 @@
   margin: 0 auto;
   width: 90%;
 }
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.nav__right ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  display: block;
+}
+
+.nav__right ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.nav__right ul li {
+  cursor: pointer;
+}
+
+.nav__right ul li a:hover {
+  color: hsl(322, 100%, 66%);
+  background-color: hsl(186, 23%, 44%);
+}
