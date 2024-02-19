@@ -1,5 +1,5 @@
 @use "./utilities/base";
-@use "./sections/nav";
+@use "../sections/nav";
 
 @use "./sections/main";
 
@@ -7,9 +7,16 @@
 @use "./sections/hero";
 @use "./sections/footer";
 
-.shop__top{
-    // background-color: aqua;
-    background: url("https://images.pexels.com/photos/338027/pexels-photo-338027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
-  
- height:100vh;
+body{
+    background-color: aqua;
 }
+
+
+
+body{
+background: url("images/tyrout.jpg") no-repeat center center/cover;
+height: 90vh;
+}
+
+
+
