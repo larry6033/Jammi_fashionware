@@ -11,7 +11,7 @@
 
 .shop__top {
   height: 80vh;
-  background: url("../images/shop.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/shop.jpg") no-repeat center center/cover;
 }
 
 .nav__list ul {
@@ -38,6 +38,20 @@
   padding: 2em 3em;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.nav__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  gap: 2em;
+}
+
+.nav__contents h1 {
+  font-size: 4em;
+  color: white;
 }
 
 .nav__bar ul {
