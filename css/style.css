@@ -10,10 +10,54 @@
 }
 
 .shop__top {
+  height: 50vh;
+  background: url("../images/shop.jpg");
+}
+
+.nav__list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  gap: 3em;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+}
+
+.nav__btn {
+  color: white;
+  background-color: transparent;
+  padding: 2em 3em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav__bar ul {
+  list-style-type: none;
+  color: black;
+  padding: 2em;
+}
+
+.hero__men {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: center;
+}
+
+body {
   background-color: aqua;
 }
 
-.shop__top {
-  background: url("https://images.pexels.com/photos/338027/pexels-photo-338027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
-  height: 100vh;
+body {
+  background: url("images/tyrout.jpg") no-repeat center center/cover;
+  height: 90vh;
 }
