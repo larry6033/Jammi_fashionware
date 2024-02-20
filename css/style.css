@@ -60,11 +60,16 @@
   padding: 2em;
 }
 
+.hero__img {
+  border-radius: 50%;
+}
+
 .hero__men {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: center;
+  flex-direction: row;
+  width: 100%;
 }
 
 body {

@@ -2,10 +2,18 @@
 @use "../utilities/variables" as *;
 
 
+.hero__img{
+border-radius: 50%;
 
+}
 
 
 .hero__men{
-@include flex(space-evenly, center, center);
+@include flex(center, center);
+width:100%;
+}
+
+ .hero__fashion{
+ @include flex()
 }
 
