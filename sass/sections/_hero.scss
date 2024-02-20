@@ -11,10 +11,17 @@ border-radius: 50%;
 .hero__men{
 @include flex(center, center);
 width:100%;
-
+box-shadow:0 0 2px gray;
+border: 1em solid white;
+margin:3em
 }
 
- .hero__fashion{
- @include flex()
-}
 
+
+.body__contact{
+    height:80vh;
+    background-color:$dark-grayish-blue;
+    color:white;
+    margin-top: 5em;
+  }
+  
