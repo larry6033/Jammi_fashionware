@@ -67,6 +67,14 @@
   flex-direction: column;
 }
 
+.contact__content p {
+  margin-bottom: 1em;
+}
+
+.contact__content h1 {
+  font-size: 5rem;
+}
+
 .input__contact {
   display: flex;
   justify-content: space-between;
@@ -106,12 +114,20 @@
   align-items: center;
   flex-direction: center;
   margin-top: 5em;
+  flex: 1;
 }
 
 .contact__main ul li {
   list-style-type: none;
 }
 
+@media screen and (max-width: 414px) {
+  .body__contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .hero__img {
   border-radius: 50%;
 }
