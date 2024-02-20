@@ -6,10 +6,11 @@
 
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 97%;
 }
 
 .nav__content {
+  background-color: hsl(193, 100%, 96%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,4 +41,9 @@
 .nav__right ul li a:hover {
   color: hsl(322, 100%, 66%);
   background-color: hsl(186, 23%, 44%);
+}
+
+.hero {
+  height: 80vh;
+  background-image: url(https://i.pinimg.com/236x/f0/06/1b/f0061b95c80e9cd02a733592351e63c1.jpg);
 }
