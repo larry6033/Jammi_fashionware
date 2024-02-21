@@ -48,3 +48,20 @@ color:#fff
   color: black;
   padding: 2em;
 }
+
+@media screen and (max-width:414px) {
+ .nav__btn{
+    display:none;
+
+ }
+ .nav__list{
+    display:block;
+ }
+    
+//     @include flex(center, center, center, row);
+//     flex-direction: column;
+//  }  
+}
+
+
+

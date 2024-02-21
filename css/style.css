@@ -67,6 +67,14 @@
   padding: 2em;
 }
 
+@media screen and (max-width: 414px) {
+  .nav__btn {
+    display: none;
+  }
+  .nav__list {
+    display: block;
+  }
+}
 .contact__content {
   display: flex;
   justify-content: center;
@@ -210,6 +218,14 @@
   margin-top: 5em;
 }
 
+@media screen and (max-width: 414px) {
+  .hero__men {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 body {
   background: url("images/tyrout.jpg") no-repeat center center/cover;
   height: 90vh;

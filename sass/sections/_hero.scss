@@ -71,3 +71,14 @@ color:$dark-grayish-blue;
     margin-top: 5em;
   }
   
+
+  @media screen and (max-width:414px) {
+    .hero__men{
+        width:100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    
+    
+  }
