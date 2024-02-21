@@ -1,6 +1,7 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
+
 .nav__content {
   background-color: $Very-Pale-Cyan;
   @include flex(space-between, center);
@@ -34,3 +35,69 @@
   border: none;
   outline:none;
 }
+
+// @use "./utilities/shop.html";
+
+.shop__top {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/shop.jpg") no-repeat center center/cover;
+}
+
+.nav__list ul {
+  @include flex(space-around, center, center);
+  gap: 3em;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__list {
+  @include flex(space-around, center, center);
+}
+
+.nav__btn {
+  color: white;
+  background-color: transparent;
+  padding: 2em 3em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav__contents {
+  @include flex(center, center, column);
+  margin-top: 5em;
+  gap: 2em;
+}
+
+.nav__contents p{
+color:#fff
+}
+
+.nav__contents h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.nav__bar ul {
+  list-style-type: none;
+  color: black;
+  padding: 2em;
+}
+
+@media screen and (max-width:414px) {
+ .nav__btn{
+    display:none;
+
+ }
+ .nav__list{
+    display:block;
+ }
+    
+//     @include flex(center, center, center, row);
+//     flex-direction: column;
+//  }  
+}
+
+
+
