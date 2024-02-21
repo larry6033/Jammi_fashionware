@@ -168,6 +168,10 @@
   gap: 3em;
 }
 
+.hero__men h2 {
+  margin-top: -5em;
+}
+
 .hero__men h4 {
   color: hsl(227, 10%, 46%);
 }
