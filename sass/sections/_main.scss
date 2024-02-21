@@ -48,7 +48,7 @@ margin:3em;
   .contact__main{
     @include flex(space-around, center, center);
     margin-top: 5em;
-    flex:1;
+    // flex:1;
   }
 
   .contact__main ul li{
@@ -67,3 +67,8 @@ margin:3em;
   }
 
 //   end of contact page
+
+.body__container{
+    background-color: $dark-grayish-blue;
+    
+}

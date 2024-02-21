@@ -114,7 +114,6 @@
   align-items: center;
   flex-direction: center;
   margin-top: 5em;
-  flex: 1;
 }
 
 .contact__main ul li {
@@ -128,19 +127,69 @@
     flex-wrap: wrap;
   }
 }
-.hero__img {
-  border-radius: 50%;
+.body__container {
+  background-color: hsl(227, 10%, 46%);
 }
 
-.hero__men {
+.hero__img {
+  cursor: pointer;
+  border: 1px solid gray;
+  flex: 1;
+  box-shadow: 0 0 1px solid black;
+}
+
+.hero__kids {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
-  box-shadow: 0 0 2px gray;
+  gap: 3em;
+}
+
+.hero__people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.hero__men {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  width: 80%;
+  box-shadow: 0 0 2px black;
   border: 1em solid white;
-  margin: 3em;
+  background-color: white;
+  margin-top: 3em;
+  margin-left: 9em;
+  gap: 3em;
+}
+
+.hero__men h4 {
+  color: hsl(227, 10%, 46%);
+}
+
+.hero__men button {
+  background-color: hsl(227, 10%, 46%);
+  padding: 1em 2em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hero__men button:hover {
+  color: #fff;
+  background-color: hsl(229, 23%, 23%);
+}
+
+.kids {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  gap: 3em;
 }
 
 .body__contact {

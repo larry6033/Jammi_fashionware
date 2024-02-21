@@ -1,20 +1,61 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
-
 .hero__img{
-border-radius: 50%;
-
+    cursor:pointer;
+    // border-radius: 1em;
+    border: 1px solid gray;
+    flex:1;
+    box-shadow:0 0 1px solid black;
 }
 
+
+
+
+.hero__kids{
+    @include flex(center, center);
+    gap:3em;
+}
+
+
+.hero__people{
+    @include flex(center, center);
+    gap:3em;
+}
 
 .hero__men{
-@include flex(center, center);
-width:100%;
-box-shadow:0 0 2px gray;
+@include flex( space-around, center, center);
+width:80%;
+box-shadow:0 0 2px black;
 border: 1em solid white;
-margin:3em
+background-color: white;
+margin-top: 3em;
+margin-left:9em;
+gap:3em;
 }
+
+.hero__men h4{
+color:$dark-grayish-blue;
+}
+
+.hero__men button{
+    background-color: $dark-grayish-blue;
+    padding:1em 2em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hero__men button:hover{
+    color:#fff;
+    background-color:$very-dark-desaturated-blue;
+}
+
+.kids{
+    @include flex( space-around, center, center);
+    gap:3em;
+}
+
+
 
 
 
