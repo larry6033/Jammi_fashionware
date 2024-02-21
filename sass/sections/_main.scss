@@ -2,3 +2,75 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+// contact page
+.contact__content{
+    @include flex(center, center, column);
+}
+
+.contact__content p{
+    margin-bottom:1em;
+}
+
+.contact__content h1{
+font-size:5rem;
+}
+
+
+.input__contact{
+@include flex(space-between, center, center);
+gap:5em;
+margin:3em; 
+}
+
+.input__contact input{
+    padding:1em 2em;
+    border-radius: 1em;
+}
+
+.input__contact input:hover{
+    background-color: $Very-DarCyank-;
+    color:white;
+}
+
+.contact__button{
+    color: white;
+    background-color:$Pink;
+    padding: 2em 3em;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+  }
+
+  .contact__button:hover{
+    color:$Pink;
+    background-color: $very-dark-desaturated-blue;
+  }
+
+  .contact__main{
+    @include flex(space-around, center, center);
+    margin-top: 5em;
+    // flex:1;
+    // background-color:hsl(192, 100%, 9%);
+  }
+
+  .contact__main ul li{
+    list-style-type: none;
+
+  }
+
+
+  @media screen and (max-width:414px) {
+.body__contact{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+    
+  }
+
+//   end of contact page
+
+.body__container{
+    background-color: $dark-grayish-blue;
+    
+}
