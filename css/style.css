@@ -9,6 +9,119 @@
 
 .container {
   margin: 0 auto;
+
+  width: 97%;
+}
+
+.nav__content {
+  background-color: hsl(193, 100%, 96%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.nav__center ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  display: block;
+}
+
+.nav__center ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.nav__center ul li {
+  cursor: pointer;
+}
+
+.nav__center ul li a:hover {
+  color: hsl(322, 100%, 66%);
+  background-color: hsl(186, 23%, 44%);
+}
+
+.nav__right {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+
+.nav__right input {
+  padding: 2em 1em;
+  border: none;
+  outline: none;
+}
+
+.main__content {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.main__quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  padding: 2em;
+  background-color: aliceblue;
+}
+
+.main__ads {
+  margin-top: 2em;
+}
+
+.ads-shoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.ads-tshirts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.ads-hoodies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.ads-dresses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+}
+
+h3 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.hero {
+  color: #fff;
+=======
   width: 90%;
 }
 
@@ -154,18 +267,113 @@
 }
 
 .hero__kids {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  background-color: hsl(186, 23%, 44%);
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+
   gap: 3em;
 }
 
 .hero__people {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+}
+
+.hero__left {
+  width: 40%;
+}
+
+.hero__right {
+  position: relative;
+  width: 40%;
+}
+
+.hero-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+.hero__img-1 {
+  z-index: 1;
+  margin-right: -5em;
+}
+
+.footer {
+  height: 30%;
+  background-color: hsl(186, 23%, 44%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: row;
+  gap: 2em;
+  padding: 70px;
+}
+
+.footer h3 {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer__center ul li {
+  list-style-type: none;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.footer__center ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email-footer {
+  padding: 2em;
+  border: none;
+  outline: none;
+}
+
+.btn-footer {
+  background-color: hsl(192, 100%, 9%);
+  border: none;
+  padding: 1.8em;
+  color: #fff;
+  font-size: 23px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+
   gap: 3em;
 }
 
@@ -229,4 +437,5 @@
 body {
   background: url("images/tyrout.jpg") no-repeat center center/cover;
   height: 90vh;
+
 }
