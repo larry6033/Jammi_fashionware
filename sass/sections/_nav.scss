@@ -6,21 +6,31 @@
   @include flex(space-between, center);
   gap: 2em;
 }
-.nav__right ul li a {
+.nav__center ul li a {
   text-decoration: none;
   color: black;
   padding: 1em;
   display: block;
 }
-.nav__right ul {
+.nav__center ul {
   list-style-type: none;
   @include flex(space-between, center);
   gap: 2em;
 }
-.nav__right ul li {
+.nav__center ul li {
   cursor: pointer;
 }
-.nav__right ul li a:hover {
+.nav__center ul li a:hover {
   color: $Pink;
   background-color: $dark-cyan;
+}
+.nav__right {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+.nav__right  input {
+  padding: 2em 1em;
+  border: none;
+  outline:none;
 }
