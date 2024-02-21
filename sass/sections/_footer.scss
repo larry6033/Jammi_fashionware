@@ -1,0 +1,38 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+.footer {
+  height: 30%;
+  background-color: $dark-cyan;
+  @include flex(space-evenly, space-evenly);
+  gap: 2em;
+  padding: 70px;
+}
+.footer h3 {
+  font-size: 30px;
+  color: $white;
+  @include flex(space-between, center);
+}
+.footer__center ul li {
+  list-style-type: none;
+  font-size: 30px;
+  padding: 15px;
+}
+.footer__center ul li a {
+  color: $white;
+  text-decoration: none;
+}
+.email-footer {
+  padding: 2em;
+  border: none;
+  outline: none;
+}
+.btn-footer {
+  background-color: $Very-Dark-Cyan;
+  border: none;
+  padding: 1.8em;
+  color: $white;
+  font-size: 23px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
