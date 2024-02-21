@@ -136,16 +136,20 @@
 }
 
 @media screen and (max-width: 414px) {
-  .body__contact {
+  .contact__main {
     display: flex;
     flex-direction: column;
+    flex: 1;
     flex-wrap: wrap;
   }
+  .input__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .get__in__touch {
+    margin: 3em 0;
+  }
 }
-.body__container {
-  background-color: hsl(227, 10%, 46%);
-}
-
 .hero__img {
   cursor: pointer;
   border: 1px solid gray;
