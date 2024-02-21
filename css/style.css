@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
+  font-style: normal;
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,6 +50,10 @@
   flex-direction: column;
   margin-top: 5em;
   gap: 2em;
+}
+
+.nav__contents p {
+  color: #fff;
 }
 
 .nav__contents h1 {
@@ -193,7 +200,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: center;
-  gap: 3em;
+  gap: 4em;
 }
 
 .body__contact {
