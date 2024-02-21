@@ -13,12 +13,12 @@
 .hero__left {
   width: 40%;
 }
-.hero__right{
-  position:relative;
-  width:40%;
+.hero__right {
+  position: relative;
+  width: 40%;
 }
 .hero-button {
-  
+
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 1em 2em;
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 .hero-button:hover{
-  color:$Very-Pale-Cyan;
+  color:$Pink;
 }
 .hero__img-1 {
   z-index: 1;
