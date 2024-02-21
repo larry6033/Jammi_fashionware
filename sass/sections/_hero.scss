@@ -1,11 +1,13 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 .hero {
+  color:$white;
   @include flex(center, center);
   background-color: $dark-cyan;
 }
 
 .hero h2 {
+  color:$white;
   font-size: 5rem;
   font-weight: bold;
   @include flex(center, center);

@@ -9,7 +9,7 @@
 }
 .footer h3 {
   font-size: 30px;
-  color: $Very-Dark-Cyan;
+  color: $white;
   @include flex(space-between, center);
 }
 .footer__center ul li {
@@ -18,7 +18,7 @@
   padding: 15px;
 }
 .footer__center ul li a {
-  color: $Very-Dark-Cyan;
+  color: $white;
   text-decoration: none;
 }
 .email-footer {

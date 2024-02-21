@@ -116,6 +116,7 @@ h3 {
 }
 
 .hero {
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +125,7 @@ h3 {
 }
 
 .hero h2 {
+  color: #fff;
   font-size: 5rem;
   font-weight: bold;
   display: flex;
@@ -179,7 +181,7 @@ h3 {
 
 .footer h3 {
   font-size: 30px;
-  color: hsl(192, 100%, 9%);
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,7 +195,7 @@ h3 {
 }
 
 .footer__center ul li a {
-  color: hsl(192, 100%, 9%);
+  color: #fff;
   text-decoration: none;
 }
 
