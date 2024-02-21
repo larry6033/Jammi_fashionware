@@ -116,16 +116,9 @@ h3 {
 }
 
 .testimonials {
-  height: 50vh;
-  width: 50vw;
-  background-image: url(https://i.pinimg.com/236x/ab/0b/88/ab0b889156719a632f6eb5ff0178adbb.jpg);
-}
-
-.testimonials__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 50%;
 }
 
 .hero {
@@ -160,13 +153,18 @@ h3 {
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
-  background-color: hsl(322, 100%, 66%);
-  color: black;
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  color: hsl(193, 100%, 96%);
 }
 
 .hero__img-1 {
@@ -179,23 +177,30 @@ h3 {
   background-color: hsl(186, 23%, 44%);
   display: flex;
   justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: row;
   gap: 2em;
   padding: 70px;
 }
 
 .footer h3 {
   font-size: 30px;
-  color: white;
+  color: hsl(192, 100%, 9%);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 .footer__center ul li {
-  color: white;
   list-style-type: none;
   font-size: 30px;
   padding: 15px;
+}
+
+.footer__center ul li a {
+  color: hsl(192, 100%, 9%);
+  text-decoration: none;
 }
 
 .email-footer {
@@ -205,10 +210,9 @@ h3 {
 }
 
 .btn-footer {
-  background-color: hsl(322, 100%, 66%);
+  background-color: hsl(192, 100%, 9%);
   border: none;
   padding: 1.8em;
-  color: white;
   font-size: 23px;
   border-radius: 5px;
   text-transform: capitalize;

@@ -18,28 +18,25 @@
   @include flex(center, center);
   gap: 4em;
 }
-.ads-tshirts{
-    @include flex(center, center);
-    gap: 4em;
+.ads-tshirts {
+  @include flex(center, center);
+  gap: 4em;
 }
-.ads-hoodies{
-    @include flex(center, center);
-    gap: 4em;
+.ads-hoodies {
+  @include flex(center, center);
+  gap: 4em;
 }
-.ads-dresses{
-    @include flex(center, center);
-    gap: 4em;
+.ads-dresses {
+  @include flex(center, center);
+  gap: 4em;
 }
 
-h3{
-    margin-top:2em;
-text-align: center;
+h3 {
+  margin-top: 2em;
+  text-align: center;
 }
 .testimonials{
-  height:50vh;
-  width:50vw;
-  background-image: url(https://i.pinimg.com/236x/ab/0b/88/ab0b889156719a632f6eb5ff0178adbb.jpg);
-}
-.testimonials__content{
-  @include flex(center,center);
+  position:relative;
+  top:0;
+  left:calc(50%)
 }

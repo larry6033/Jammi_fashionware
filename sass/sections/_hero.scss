@@ -18,15 +18,20 @@
   width:40%;
 }
 .hero-button {
+  
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
-  background-color: $Pink;
-  color: black;
+  background-color:$Very-Dark-Cyan;
+  color:$white;
   text-transform: capitalize;
   @include flex(center, center);
+  cursor: pointer;
+}
+.hero-button:hover{
+  color:$Very-Pale-Cyan;
 }
 .hero__img-1 {
   z-index: 1;
