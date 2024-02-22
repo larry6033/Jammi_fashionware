@@ -113,6 +113,9 @@
   .nav__center {
     display: none;
   }
+  .nav__right {
+    display: none;
+  }
   .icon__bar {
     display: block;
   }
@@ -145,7 +148,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 2em;
+  gap: 4em;
   flex: 1;
 }
 
@@ -278,6 +281,16 @@ h3 {
     flex: 1;
     flex-wrap: wrap;
   }
+  .contact__middle {
+    margin: 2em 0;
+  }
+  .contact__main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 2em 0;
+  }
   .ads-shoes {
     display: none;
   }
@@ -295,6 +308,12 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 .hero {
@@ -320,6 +339,11 @@ h3 {
 .hero__left {
   width: 40%;
   padding-left: 2em;
+}
+
+.hero__right img {
+  width: 40%;
+  height: 30%;
 }
 
 .hero__right {
@@ -423,6 +447,9 @@ h3 {
 @media screen and (max-width: 414px) {
   .container {
     width: 100%;
+  }
+  .hero__img-1 {
+    width: -100%;
   }
   .hero {
     display: flex;

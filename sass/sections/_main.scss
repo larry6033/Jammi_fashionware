@@ -16,9 +16,10 @@
 .main__ads {
   margin-top: 2em;
 }
+
 .ads-shoes {
   @include flex(center, center);
-  gap: 2em;
+  gap: 4em;
   flex: 1;
 }
 .ads-tshirts {
@@ -59,8 +60,8 @@ h3 {
 }
 .testimonials__content img {
   border-radius: 50%;
- width: 50px;
- height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .testimonials__content {
   background-color: $Very-Dark-Cyan;
@@ -180,6 +181,18 @@ h3 {
     flex: 1;
     flex-wrap: wrap;
   }
+.contact__middle{
+  margin:2em 0;
+}
+
+
+  .contact__main{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    flex-wrap: wrap;
+    margin:2em 0 ;
+  }
 
   .ads-shoes {
     // display:flex;
@@ -219,4 +232,12 @@ h3 {
     flex-wrap: wrap;
     flex: 1;
   }
+
+  .contact__content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:100%;
+  }
+
 }
