@@ -181,6 +181,12 @@ h3 {
   text-align: center;
 }
 
+
+.hero {
+  color: #fff;
+
+  width: 90%;
+
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,6 +195,7 @@ h3 {
   padding: 20px;
   gap: 1em;
   place-items: center;
+
 }
 
 .testimonials__content h4 {
@@ -272,6 +279,9 @@ h3 {
 }
 
 @media screen and (max-width: 414px) {
+
+  .contact__main {
+
   .main__content {
     display: flex;
     flex-direction: column;
@@ -291,15 +301,36 @@ h3 {
     display: none;
   }
   .testimonials {
+
     display: flex;
     flex-direction: column;
+    flex: 1;
     flex-wrap: wrap;
     flex: 1;
   }
+  .input__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .get__in__touch {
+    margin: 3em 0;
+  }
 }
+
+.hero__img {
+  cursor: pointer;
+  border: 1px solid gray;
+  flex: 1;
+  box-shadow: 0 0 1px solid black;
+}
+
+
+
+
 .hero {
   height: 80vh;
   color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,7 +444,7 @@ h3 {
   gap: 4em;
 }
 
-.body__contact {
+.body_contact {
   height: 80vh;
   background-color: hsl(227, 10%, 46%);
   color: white;
@@ -520,7 +551,8 @@ h3 {
     display: block;
   }
 }
-body {
+
+/* body {
   background: url("images/tyrout.jpg") no-repeat center center/cover;
   height: 90vh;
-}
+} */

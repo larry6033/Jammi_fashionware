@@ -1,3 +1,4 @@
+
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 .footer {
@@ -47,22 +48,82 @@
 
 @media screen and (max-width:414px) {
 
+// @use "../utilities/mixins" as *;
+// @use "../utilities/variables" as *;
+// .footer {
+//   height: 30%;
+//   background-color: $dark-cyan;
+//   @include flex(space-evenly, space-evenly);
+//   gap: 2em;
+//   padding: 70px;
+// }
+// .footer-logo img {
+//   filter: brightness(0);
+//   filter: invert(1);
+// }
+// .footer h3 {
+//   font-size: 30px;
+//   color: $white;
+//   @include flex(space-between, center);
+// }
+// .footer__center ul li {
+//   list-style-type: none;
+//   font-size: 30px;
+//   padding: 15px;
+// }
+// .footer__center ul li a {
+//   color: $white;
+//   text-decoration: none;
+// }
+// .email-footer {
+//   padding: 2em;
+//   border: none;
+//   outline: none;
+// }
+// .btn-footer {
+//   background-color: $Very-Dark-Cyan;
+//   border: none;
+//   padding: 1.8em;
+//   color: $white;
+//   font-size: 23px;
+//   border-radius: 5px;
+//   text-transform: capitalize;
+//   cursor: pointer;
+// }
+
+
+
+// @media screen and (max-width:414px) {
+//   // .footer__logo{
+//   //   display:none;
+//   // }
+
   
-  .footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+//   .footer{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
   
   
-  .footer__center{
-display:none;
-  }
+//   .footer__center{
+// display:none;
+//   }
+
+//   .footer__right{
+//     display:block;
+//   }
+//   // .footer__left{
+//   //   display:flex;
+//   //   flex-direction: column;
+//   //   flex-wrap: wrap;
+//   // }
+
 
   .footer__right{
     display:block;
   }
  
 
+//   }
 
-  }
