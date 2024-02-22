@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 .nav__center ul li a:hover {
-  color: $Pink;
+  color: $Very-Pale-Cyan;
   background-color: $dark-cyan;
 }
 .nav__right {
@@ -43,16 +43,16 @@
   outline:none;
 }
 
-// @use "./utilities/shop.html";
 
-.shop__top {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/shop.jpg") no-repeat center center/cover;
-}
+
+// .shop__top {
+//   height: 80vh;
+//   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+//     url("../images/shop.jpg") no-repeat center center/cover;
+// }
 
 .nav__list ul {
-  @include flex(space-around, center, center);
+  @include flex(space-around, center);
   gap: 3em;
   list-style-type: none;
   text-decoration: none;
@@ -60,15 +60,23 @@
 }
 
 .nav__list {
-  @include flex(space-around, center, center);
+  @include flex(space-around,center,);
 }
 
 .nav__btn {
-  color: white;
-  background-color: transparent;
-  padding: 2em 3em;
-  border-radius: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color:$Very-Dark-Cyan;
+  color:$white;
+  text-transform: capitalize;
+  // @include flex(center, center);
   cursor: pointer;
+}
+.nav__btn:hover {
+  color:$Pink;
 }
 
 .nav__contents {
@@ -81,16 +89,12 @@
 color:#fff
 }
 
-.nav__contents h1 {
-  font-size: 5rem;
-  color: white;
+.icon__bar{
+  display:none;
 }
 
-.nav__bar ul {
-  list-style-type: none;
-  color: black;
-  padding: 2em;
-}
+
+
 
 @media screen and (max-width: 414px) {
 
@@ -111,7 +115,17 @@ color:#fff
     
 
 
+
+@media screen and (max-width:414px) {
+.nav__center{
+  display:none;
+}
+
+.icon__bar{
+  display:block;
+
 }
 
 
-
+}
+}

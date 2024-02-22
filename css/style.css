@@ -9,7 +9,6 @@
 
 .container {
   margin: 0 auto;
-
   width: 97%;
 }
 
@@ -43,7 +42,7 @@
 }
 
 .nav__center ul li a:hover {
-  color: hsl(322, 100%, 66%);
+  color: hsl(193, 100%, 96%);
   background-color: hsl(186, 23%, 44%);
 }
 
@@ -59,6 +58,65 @@
   outline: none;
 }
 
+.nav__list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav__btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.nav__btn:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+.nav__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  gap: 2em;
+}
+
+.nav__contents p {
+  color: #fff;
+}
+
+.icon__bar {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  .nav__center {
+    display: none;
+  }
+  .icon__bar {
+    display: block;
+  }
+}
 .main__content {
   margin-top: 2em;
   display: flex;
@@ -87,7 +145,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 4em;
+  gap: 2em;
+  flex: 1;
 }
 
 .ads-tshirts {
@@ -95,7 +154,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 4em;
+  gap: 2em;
+  flex: 1;
 }
 
 .ads-hoodies {
@@ -103,7 +163,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 4em;
+  gap: 2em;
+  flex: 1;
 }
 
 .ads-dresses {
@@ -111,7 +172,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 4em;
+  gap: 2em;
+  flex: 1;
 }
 
 h3 {
@@ -119,75 +181,41 @@ h3 {
   text-align: center;
 }
 
+
 .hero {
   color: #fff;
 
   width: 90%;
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: auto;
+  padding: 20px;
+  gap: 1em;
+  place-items: center;
+
 }
 
-.shop__top {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/shop.jpg") no-repeat center center/cover;
-}
-
-.nav__list ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: center;
-  gap: 3em;
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: center;
-}
-
-.nav__btn {
-  color: white;
-  background-color: transparent;
-  padding: 2em 3em;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.nav__contents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5em;
-  gap: 2em;
-}
-
-.nav__contents p {
+.testimonials__content h4 {
   color: #fff;
 }
 
-.nav__contents h1 {
-  font-size: 5rem;
-  color: white;
+.testimonials__content p {
+  color: #fff;
 }
 
-.nav__bar ul {
-  list-style-type: none;
-  color: black;
-  padding: 2em;
+.testimonials__content img {
+  border-radius: 50%;
 }
 
-@media screen and (max-width: 414px) {
-  .nav__btn {
-    display: none;
-  }
-  .nav__list {
-    display: block;
-  }
+.testimonials__content {
+  background-color: red;
+  width: 100%;
+  height: 100%;
 }
+
 .contact__content {
   display: flex;
   justify-content: center;
@@ -249,11 +277,34 @@ h3 {
 }
 
 @media screen and (max-width: 414px) {
+
   .contact__main {
+
+  .main__content {
     display: flex;
     flex-direction: column;
     flex: 1;
     flex-wrap: wrap;
+  }
+  .ads-shoes {
+    display: none;
+  }
+  .ads-dresses {
+    display: none;
+  }
+  .ads-hoodies {
+    display: none;
+  }
+  .ads-tshirts {
+    display: none;
+  }
+  .testimonials {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    flex: 1;
   }
   .input__contact {
     display: flex;
@@ -263,6 +314,7 @@ h3 {
     margin: 3em 0;
   }
 }
+
 .hero__img {
   cursor: pointer;
   border: 1px solid gray;
@@ -272,11 +324,15 @@ h3 {
 
 .hero__kids {
 
+
+.hero {
+  height: 80vh;
+  color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
   background-color: hsl(186, 23%, 44%);
 }
 
@@ -284,24 +340,23 @@ h3 {
   color: #fff;
   font-size: 5rem;
   font-weight: bold;
-
-  gap: 3em;
-}
-
-.hero__people {
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
 }
 
 .hero__left {
   width: 40%;
+  padding-left: 2em;
 }
 
 .hero__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
   position: relative;
   width: 40%;
 }
@@ -326,11 +381,95 @@ h3 {
   color: hsl(322, 100%, 66%);
 }
 
-.hero__img-1 {
-  z-index: 1;
-  margin-right: -5em;
+.hero__img {
+  cursor: pointer;
+  border: 1px solid gray;
+  flex: 1;
+  box-shadow: 0 0 1px solid black;
 }
 
+.hero__kids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.hero__people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.hero__men {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  width: 80%;
+  box-shadow: 0 0 2px black;
+  border: 1em solid white;
+  background-color: white;
+  margin-top: 3em;
+  margin-left: 9em;
+  gap: 3em;
+}
+
+.hero__men h2 {
+  margin-top: -5em;
+}
+
+.hero__men h4 {
+  color: hsl(227, 10%, 46%);
+}
+
+.kids {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  gap: 4em;
+}
+
+.body_contact {
+  height: 80vh;
+  background-color: hsl(227, 10%, 46%);
+  color: white;
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    width: 100%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__left {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5em;
+  }
+  .hero__left h2 {
+    font-size: 2em;
+  }
+  .hero__right {
+    width: 50px;
+  }
+  .hero__img-2 {
+    display: none;
+  }
+  .hero__about {
+    width: 100%;
+    position: relative;
+    margin-right: 1.8em;
+  }
+}
 .footer {
   height: 30%;
   background-color: hsl(186, 23%, 44%);
@@ -340,6 +479,11 @@ h3 {
   flex-direction: row;
   gap: 2em;
   padding: 70px;
+}
+
+.footer-logo img {
+  filter: brightness(0);
+  filter: invert(1);
 }
 
 .footer h3 {
@@ -377,69 +521,23 @@ h3 {
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
-
-  gap: 3em;
-}
-
-.hero__men {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: center;
-  width: 80%;
-  box-shadow: 0 0 2px black;
-  border: 1em solid white;
-  background-color: white;
-  margin-top: 3em;
-  margin-left: 9em;
-  gap: 3em;
-}
-
-.hero__men h2 {
-  margin-top: -5em;
-}
-
-.hero__men h4 {
-  color: hsl(227, 10%, 46%);
-}
-
-.hero__men button {
-  background-color: hsl(227, 10%, 46%);
-  padding: 1em 2em;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.hero__men button:hover {
-  color: #fff;
-  background-color: hsl(229, 23%, 23%);
-}
-
-.kids {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: center;
-  gap: 4em;
-}
-
-.body__contact {
-  height: 80vh;
-  background-color: hsl(227, 10%, 46%);
-  color: white;
-  margin-top: 5em;
 }
 
 @media screen and (max-width: 414px) {
-  .hero__men {
-    width: 100%;
+  .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
+  .footer__center {
+    display: none;
+  }
+  .footer__right {
+    display: block;
+  }
 }
-body {
+
+/* body {
   background: url("images/tyrout.jpg") no-repeat center center/cover;
   height: 90vh;
-
-}
+} */

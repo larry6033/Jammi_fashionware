@@ -7,6 +7,10 @@
   gap: 2em;
   padding: 70px;
 }
+.footer-logo img {
+  filter: brightness(0);
+  filter: invert(1);
+}
 .footer h3 {
   font-size: 30px;
   color: $white;
@@ -39,4 +43,31 @@
 
 
 
+@media screen and (max-width:414px) {
+  // .footer__logo{
+  //   display:none;
+  // }
+  
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  
+  .footer__center{
+display:none;
+  }
+
+  .footer__right{
+    display:block;
+  }
+  // .footer__left{
+  //   display:flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  // }
+
+
+  }
 
