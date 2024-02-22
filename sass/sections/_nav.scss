@@ -1,5 +1,48 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
+
+
+.bar__icon{
+    display: none;
+}
+
+
+
+.nav__content {
+  background-color: $Very-Pale-Cyan;
+  @include flex(space-between, center);
+  gap: 2em;
+}
+.nav__center ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  display: block;
+}
+.nav__center ul {
+  list-style-type: none;
+  @include flex(space-between, center);
+  gap: 2em;
+}
+.nav__center ul li {
+  cursor: pointer;
+}
+.nav__center ul li a:hover {
+  color: $Pink;
+  background-color: $dark-cyan;
+}
+.nav__right {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+.nav__right  input {
+  padding: 2em 1em;
+  border: none;
+  outline:none;
+}
+
 // @use "./utilities/shop.html";
 
 .shop__top {
@@ -49,17 +92,25 @@ color:#fff
   padding: 2em;
 }
 
-@media screen and (max-width:414px) {
- .nav__btn{
+@media screen and (max-width: 414px) {
+
+.list{
     display:none;
- }
- .nav__list{
-    display:block;
- }
+}
+
+.nav__flexable{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex:1;
+}
+
+.bar__icon{
+    display: block;
+}
     
-//     @include flex(center, center, center, row);
-//     flex-direction: column;
-//  }  
+
+
 }
 
 

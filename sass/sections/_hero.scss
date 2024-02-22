@@ -1,6 +1,48 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
+.hero {
+  color:$white;
+  @include flex(center, center);
+  background-color: $dark-cyan;
+}
+
+.hero h2 {
+  color:$white;
+  font-size: 5rem;
+  font-weight: bold;
+  @include flex(center, center);
+}
+.hero__left {
+  width: 40%;
+}
+.hero__right {
+  position: relative;
+  width: 40%;
+}
+.hero-button {
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color:$Very-Dark-Cyan;
+  color:$white;
+  text-transform: capitalize;
+  @include flex(center, center);
+  cursor: pointer;
+}
+.hero-button:hover{
+  color:$Pink;
+}
+.hero__img-1 {
+  z-index: 1;
+  // margin-top: -10em;
+  margin-right: -5em;
+}
+
+
 .hero__img{
     cursor:pointer;
     // border-radius: 1em;
@@ -66,7 +108,7 @@ color:$dark-grayish-blue;
 
 .body__contact{
     height:80vh;
-    background-color:$dark-grayish-blue;
+    // background-color:$dark-grayish-blue;
     color:white;
     margin-top: 5em;
   }
@@ -79,6 +121,21 @@ color:$dark-grayish-blue;
     flex-direction: column;
     flex-wrap: wrap;
     }
+
+    .hero__clothes{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex:1;
+    }
+
+    .hero__fashion{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex:1;
+    }
     
     
   }
+
