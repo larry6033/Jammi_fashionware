@@ -201,6 +201,8 @@ h3 {
 
 .testimonials__content img {
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .testimonials__content {
@@ -328,6 +330,14 @@ h3 {
   flex: 1;
   position: relative;
   width: 40%;
+}
+
+.hero__img-1 {
+  width: 30%;
+}
+
+.hero__img-2 {
+  width: 50%;
 }
 
 .hero-button {
@@ -491,6 +501,10 @@ h3 {
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+.btn-footer:hover {
+  color: hsl(322, 100%, 66%);
 }
 
 @media screen and (max-width: 414px) {

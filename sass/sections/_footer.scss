@@ -42,13 +42,11 @@
   cursor: pointer;
 }
 .btn-footer:hover{
-  color:$pink;
+  color:$Pink;
 }
 
 @media screen and (max-width:414px) {
-  // .footer__logo{
-  //   display:none;
-  // }
+
   
   .footer{
     display: flex;
@@ -64,11 +62,7 @@ display:none;
   .footer__right{
     display:block;
   }
-  // .footer__left{
-  //   display:flex;
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  // }
+ 
 
 
   }
