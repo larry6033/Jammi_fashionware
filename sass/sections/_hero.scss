@@ -1,42 +1,144 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
+
 .hero {
-  color:$white;
+  height: 80vh;
+  color: $white;
   @include flex(center, center);
   background-color: $dark-cyan;
 }
 
 .hero h2 {
-  color:$white;
+  color: $white;
   font-size: 5rem;
   font-weight: bold;
   @include flex(center, center);
 }
 .hero__left {
   width: 40%;
+  padding-left: 2em;
 }
 .hero__right {
+  @include flex(center, center);
+  flex: 1;
   position: relative;
   width: 40%;
 }
 .hero-button {
-
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
-  background-color:$Very-Dark-Cyan;
-  color:$white;
+  background-color: $Very-Dark-Cyan;
+  color: $white;
   text-transform: capitalize;
   @include flex(center, center);
   cursor: pointer;
 }
-.hero-button:hover{
+.hero-button:hover {
   color:$Pink;
 }
-.hero__img-1 {
-  z-index: 1;
-  // margin-top: -10em;
-  margin-right: -5em;
+
+
+.hero__img {
+  cursor: pointer;
+
+  border: 1px solid gray;
+  flex: 1;
+  box-shadow: 0 0 1px solid black;
+}
+
+.hero__kids {
+  @include flex(center, center);
+  gap: 3em;
+}
+
+.hero__people {
+  @include flex(center, center);
+  gap: 3em;
+}
+
+.hero__men {
+  @include flex(space-around, center, center);
+  width: 80%;
+  box-shadow: 0 0 2px black;
+  border: 1em solid white;
+  background-color: white;
+  margin-top: 3em;
+  margin-left: 9em;
+  gap: 3em;
+}
+
+.hero__men h2 {
+  margin-top: -5em;
+}
+
+.hero__men h4 {
+  color: $dark-grayish-blue;
+}
+
+// .hero__men button {
+//   background-color: $dark-grayish-blue;
+//   padding: 1em 2em;
+//   border-radius: 7px;
+//   cursor: pointer;
+// }
+
+// .hero__men button:hover {
+//   color: #fff;
+//   background-color: $very-dark-desaturated-blue;
+// }
+
+.kids {
+  @include flex(space-around, center, center);
+  gap: 4em;
+}
+
+.body__contact {
+  height: 80vh;
+  background-color: $dark-grayish-blue;
+  color: white;
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 414px) {
+  .container{
+    width:100%;
+  }
+  
+  
+  .hero{
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+  }
+.hero__left{
+  display:block;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+
+  .hero__left h2{
+    font-size: 2em;
+  }
+
+  .hero__right{
+    width:50px;
+  }
+
+
+
+  .hero__img-2{
+    display: none;
+  }
+
+
+  .hero__about{
+    width:100%;
+    position: relative;
+    margin-right: 1.8em;
+  }
 }
