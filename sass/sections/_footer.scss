@@ -29,6 +29,7 @@
   padding: 2em;
   border: none;
   outline: none;
+  border-radius: 5px;
 }
 .btn-footer {
   background-color: $Very-Dark-Cyan;
@@ -40,7 +41,9 @@
   text-transform: capitalize;
   cursor: pointer;
 }
-
+.btn-footer:hover{
+  color:$pink;
+}
 
 @media screen and (max-width:414px) {
   // .footer__logo{

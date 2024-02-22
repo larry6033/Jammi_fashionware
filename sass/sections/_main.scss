@@ -15,27 +15,26 @@
 }
 .main__ads {
   margin-top: 2em;
-  
 }
 .ads-shoes {
   @include flex(center, center);
   gap: 2em;
-  flex:1;
+  flex: 1;
 }
 .ads-tshirts {
   @include flex(center, center);
   gap: 2em;
-  flex:1;
+  flex: 1;
 }
 .ads-hoodies {
   @include flex(center, center);
   gap: 2em;
-  flex:1;
+  flex: 1;
 }
 .ads-dresses {
   @include flex(center, center);
   gap: 2em;
-  flex:1;
+  flex: 1;
 }
 
 h3 {
@@ -60,12 +59,12 @@ h3 {
 }
 .testimonials__content img {
   border-radius: 50%;
+ 
 }
 .testimonials__content {
-  background-color: red;
+  background-color: $Very-Dark-Cyan;
   width: 100%;
   height: 100%;
-  
 }
 
 // // Carousel
