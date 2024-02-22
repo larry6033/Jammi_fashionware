@@ -183,8 +183,9 @@ h3 {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: auto;
   padding: 20px;
   gap: 1em;
   place-items: center;
@@ -203,9 +204,9 @@ h3 {
 }
 
 .testimonials__content {
-  background-color: hsl(229, 23%, 23%);
-  border: 1px 2px solid red;
-  box-shadow: 1px 1px solid red;
+  background-color: red;
+  width: 100%;
+  height: 100%;
 }
 
 .contact__content {
@@ -392,13 +393,6 @@ h3 {
 
 .hero__men h4 {
   color: hsl(227, 10%, 46%);
-}
-
-.hero__men button {
-  background-color: hsl(227, 10%, 46%);
-  padding: 1em 2em;
-  border-radius: 7px;
-  cursor: pointer;
 }
 
 .kids {
