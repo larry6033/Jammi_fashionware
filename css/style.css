@@ -12,6 +12,10 @@
   width: 97%;
 }
 
+.bar__icon {
+  display: none;
+}
+
 .nav__content {
   background-color: hsl(193, 100%, 96%);
   display: flex;
@@ -110,6 +114,20 @@
 }
 
 @media screen and (max-width: 414px) {
+  .list {
+    display: none;
+  }
+  .nav__flexable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .bar__icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 414px) {
   .nav__center {
     display: none;
   }
@@ -181,12 +199,6 @@ h3 {
   text-align: center;
 }
 
-
-.hero {
-  color: #fff;
-
-  width: 90%;
-
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -195,7 +207,6 @@ h3 {
   padding: 20px;
   gap: 1em;
   place-items: center;
-
 }
 
 .testimonials__content h4 {
@@ -208,10 +219,12 @@ h3 {
 
 .testimonials__content img {
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .testimonials__content {
-  background-color: red;
+  background-color: hsl(192, 100%, 9%);
   width: 100%;
   height: 100%;
 }
@@ -277,42 +290,77 @@ h3 {
 }
 
 @media screen and (max-width: 414px) {
-
-  .contact__main {
-
-  .main__content {
+  .body__contact {
     display: flex;
     flex-direction: column;
-    flex: 1;
     flex-wrap: wrap;
   }
-  .ads-shoes {
-    display: none;
-  }
-  .ads-dresses {
-    display: none;
-  }
-  .ads-hoodies {
-    display: none;
-  }
-  .ads-tshirts {
-    display: none;
-  }
-  .testimonials {
+}
+.body__container {
+  background-color: hsl(227, 10%, 46%);
+}
 
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-  .input__contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .get__in__touch {
-    margin: 3em 0;
-  }
+.hero {
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: hsl(186, 23%, 44%);
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hero__left {
+  width: 40%;
+  padding-left: 2em;
+}
+
+.hero__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
+  width: 40%;
+}
+
+.hero__img-1 {
+  width: 30%;
+}
+
+.hero__img-2 {
+  width: 50%;
+}
+
+.hero-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  color: hsl(322, 100%, 66%);
 }
 
 .hero__img {
@@ -322,13 +370,51 @@ h3 {
   box-shadow: 0 0 1px solid black;
 }
 
+.hero__kids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
 
+.hero__people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3em;
+}
 
+.hero__men {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  width: 80%;
+  box-shadow: 0 0 2px black;
+  border: 1em solid white;
+  background-color: white;
+  margin-top: 3em;
+  margin-left: 9em;
+  gap: 3em;
+}
+
+.hero__men h2 {
+  margin-top: -5em;
+}
+
+.hero__men h4 {
+  color: hsl(227, 10%, 46%);
+}
+
+.hero__men button {
+  background-color: hsl(227, 10%, 46%);
+}
 
 .hero {
   height: 80vh;
   color: #fff;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,6 +512,18 @@ h3 {
   color: hsl(227, 10%, 46%);
 }
 
+.hero__men button {
+  background-color: hsl(227, 10%, 46%);
+  padding: 1em 2em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hero__men button:hover {
+  color: #fff;
+  background-color: hsl(229, 23%, 23%);
+}
+
 .kids {
   display: flex;
   justify-content: space-around;
@@ -434,7 +532,23 @@ h3 {
   gap: 4em;
 }
 
-.body_contact {
+.hero__men button:hover {
+  color: #fff;
+  background-color: hsl(229, 23%, 23%);
+}
+
+.kids {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+  gap: 4em;
+}
+
+.body__contact {
+  height: 80vh;
+  color: white;
+  margin-top: 5em;
   height: 80vh;
   background-color: hsl(227, 10%, 46%);
   color: white;
@@ -448,28 +562,46 @@ h3 {
   .hero {
     display: flex;
     flex-direction: column;
-  }
-  .hero__left {
-    display: block;
-    width: 100%;
     flex-wrap: wrap;
-    margin-top: 5em;
   }
-  .hero__left h2 {
-    font-size: 2em;
+  .hero__clothes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
   }
-  .hero__right {
-    width: 50px;
-  }
-  .hero__img-2 {
-    display: none;
-  }
-  .hero__about {
-    width: 100%;
-    position: relative;
-    margin-right: 1.8em;
+  .hero__fashion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
   }
 }
+.hero__left {
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.hero__left h2 {
+  font-size: 2em;
+}
+
+.hero__right {
+  width: 50px;
+}
+
+.hero__img-2 {
+  display: none;
+}
+
+.hero__about {
+  width: 100%;
+  position: relative;
+  margin-right: 1.8em;
+}
+
 .footer {
   height: 30%;
   background-color: hsl(186, 23%, 44%);
@@ -510,6 +642,7 @@ h3 {
   padding: 2em;
   border: none;
   outline: none;
+  border-radius: 5px;
 }
 
 .btn-footer {
@@ -523,21 +656,16 @@ h3 {
   cursor: pointer;
 }
 
+.btn-footer:hover {
+  color: hsl(322, 100%, 66%);
+}
+
 @media screen and (max-width: 414px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .footer__center {
-    display: none;
-  }
   .footer__right {
     display: block;
   }
 }
-
-/* body {
+body {
   background: url("images/tyrout.jpg") no-repeat center center/cover;
   height: 90vh;
-} */
+}
