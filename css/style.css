@@ -76,6 +76,16 @@
   flex-direction: row;
 }
 
+.nav__search-button {
+  border: none;
+  padding: 2em;
+  color: white;
+  font-size: 23px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: black;
+}
+
 .nav__btn {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -463,6 +473,9 @@ h3 {
   }
   .hero__left h2 {
     font-size: 2em;
+  }
+  .hero__left--img {
+    display: none;
   }
   .hero__right {
     width: 50px;

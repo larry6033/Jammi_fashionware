@@ -69,57 +69,6 @@ h3 {
   height: 100%;
 }
 
-// // Carousel
-
-// .testimonials {
-//   position: relative;
-//   width: 100vw;
-//   height: 100vh;
-//   margin-top: 2em;
-// }
-// .testimonials .testimonials__content {
-//   position: absolute;
-//   top: 0;
-//   left: calc(50% - 100px);
-//   opacity: 0;
-//   animation: display 10s infinite;
-// }
-// img:nth-child(2) {
-//   animation-delay: 2s;
-// }
-// img:nth-child(3) {
-//   animation-delay: 4s;
-// }
-// img:nth-child(4) {
-//   animation-delay: 6s;
-// }
-// img:nth-child(4) {
-//   animation-delay: 8s;
-// }
-
-//     opacity: 0;
-//   }
-//   10% {
-//     transform: translatex(0);
-//     opacity: 1;
-//   }
-//   20% {
-//     transform: translatex(0);
-//     opacity: 0;
-//   }
-//   30% {
-//     transform: translatex(0);
-//     opacity: 0;
-//   }
-//   40% {
-//     transform: translatex(-200px);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translatex(-200px);
-//     opacity: 0;
-//   }
-// }
 
 .contact__content {
   @include flex(center, center, column);
@@ -166,8 +115,7 @@ h3 {
 .contact__main {
   @include flex(space-around, center, center);
   margin-top: 5em;
-  // flex:1;
-  // background-color:hsl(192, 100%, 9%);
+
 }
 
 .contact__main ul li {
@@ -195,34 +143,22 @@ h3 {
   }
 
   .ads-shoes {
-    // display:flex;
-    // flex-direction: column;
-    // flex:1;
-    // flex-wrap: wrap;
+    
     display: none;
   }
 
   .ads-dresses {
-    // display:flex;
-    // flex-direction: column;
-    // flex:1;
-    // flex-wrap: wrap;
+ 
     display: none;
   }
 
   .ads-hoodies {
-    // display:flex;
-    // flex-direction: column;
-    // flex:1;
-    // flex-wrap: wrap;
+    
     display: none;
   }
 
   .ads-tshirts {
-    // display:flex;
-    // flex-direction: column;
-    // flex:1;
-    // flex-wrap: wrap;
+    
     display: none;
   }
 

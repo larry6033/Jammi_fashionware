@@ -118,6 +118,19 @@
     width: 100%;
   }
 
+  // .hero__items{
+  //   display:flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  // }
+
+  // .hero__men{
+  //   display:flex;
+  //   flex-direction: column;
+  //   flex:1;
+  //   flex-wrap: wrap;
+  // }
+
   .hero__img-1{
     width:-100%;
   }
@@ -137,8 +150,13 @@
     font-size: 2em;
   }
 
+  .hero__left--img{
+    display:none;
+  }
+
   .hero__right {
     width: 50px;
+  
   }
 
   .hero__img-2 {
