@@ -564,17 +564,32 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .hero__clothes {
+  .hero__men h2 {
+    margin: 2em 0;
+  }
+  .hero__items {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1;
+    margin: 2em 0;
+    gap: 2em;
+  }
+  .hero__men {
+    width: 100%;
+  }
+  .hero__right--img {
+    display: none;
   }
   .hero__fashion {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
+  }
+  .kids {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 .hero__left {

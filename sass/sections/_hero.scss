@@ -216,11 +216,32 @@
     flex-wrap: wrap;
   }
 
-  .hero__clothes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1;
+  .hero__men h2{
+margin:2em 0;
+
+  }
+.hero__items{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2em 0;
+  gap:2em;
+}
+
+.hero__men{
+  width:100%;
+}
+
+
+  // .hero__clothes {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  //   flex: 1;
+  // }
+
+  .hero__right--img{
+    display: none;
   }
 
   .hero__fashion {
@@ -229,6 +250,13 @@
     flex-wrap: wrap;
     flex: 1;
   }
+.kids{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ 
 }
 .hero__left {
   display: block;
