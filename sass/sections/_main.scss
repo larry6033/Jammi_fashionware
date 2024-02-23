@@ -176,4 +176,11 @@ h3 {
     width:100%;
   }
 
+  .input__contact{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex:1;
+  }
+
 }

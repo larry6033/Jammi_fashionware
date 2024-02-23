@@ -118,18 +118,18 @@
     width: 100%;
   }
 
-  // .hero__items{
-  //   display:flex;
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  // }
+  .hero__items{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
-  // .hero__men{
-  //   display:flex;
-  //   flex-direction: column;
-  //   flex:1;
-  //   flex-wrap: wrap;
-  // }
+  .hero__kids{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    flex-wrap: wrap;
+  }
 
   .hero__img-1{
     width:-100%;
@@ -158,6 +158,10 @@
     width: 50px;
   
   }
+  .hero__img-1{
+    display:none;
+    // width:-100%;
+  }
 
   .hero__img-2 {
     display: none;
@@ -167,5 +171,35 @@
     width: 100%;
     position: relative;
     margin-right: 1.8em;
+  }
+  .hero_right--img{
+    display:none;
+  }
+
+  .hero-button{
+    align-items: center;
+    text-align: center;
+  }
+  .kids{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .hero__people{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .hero__men h2{
+    margin-top: 2em;
+  }
+
+  .hero__men{
+    width:100%;
+    margin-right:3em;
+  }
+
+  .img__about{
+    display:none;
   }
 }
